@@ -219,3 +219,23 @@ app_license = "agpl-3.0"
 # auth_hooks = [
 #	"site_cm.auth.validate"
 # ]
+
+
+# Fixtures
+# --------
+
+# fixtures = ['Custom Field', 'Custom Script', 'Property Setter', 'Translation']
+fixtures = [
+	"System Settings",
+	"Website Settings",
+	"Web Page",
+	"Blog Post",
+	"Translation",
+	# "List View Settings",
+	# "List Filter",
+	# "Global Defaults",
+	# "Role Profile",
+	# {'doctype': 'Translation', 'filters': [{'source_name', '', }]},
+	# {'doctype':'Email Account', 'filters': [{'is_standard':0}]},
+]
+# Then: bench --site comomejorar.localhost export-fixtures
