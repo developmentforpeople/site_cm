@@ -227,6 +227,7 @@ app_license = "agpl-3.0"
 # fixtures = ['Custom Field', 'Custom Script', 'Property Setter', 'Translation']
 fixtures = [
 	"System Settings",
+	"Language",
 	"Website Settings",
 	"Web Page",
 	"Blog Post",
