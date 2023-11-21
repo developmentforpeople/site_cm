@@ -31,7 +31,7 @@ def context_extend(context):
 
 	context.lang = frappe.local.lang or frappe.lang or frappe.db.get_default("lang")
 
-	path = getattr(frappe.local, "path", "")
+	# path = getattr(frappe.local, "path", "")
 	# context.dfp_path = path if path != "index" else ""
 	# context.dfp_url = frappe.utils.get_url(context.ae_path)
 
