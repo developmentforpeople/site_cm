@@ -64,6 +64,10 @@ app_license = "agpl-3.0"
 #	"filters": "site_cm.utils.jinja_filters"
 # }
 
+update_website_context = [
+	"site_cm.utils.overrides.context_extend",
+]
+
 # Installation
 # ------------
 
@@ -181,8 +185,8 @@ app_license = "agpl-3.0"
 
 # Request Events
 # ----------------
-# before_request = ["site_cm.utils.before_request"]
-# after_request = ["site_cm.utils.after_request"]
+before_request = ["site_cm.utils.overrides.before_request"]
+after_request = ["site_cm.utils.overrides.after_request"]
 
 # Job Events
 # ----------
