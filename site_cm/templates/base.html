@@ -91,7 +91,7 @@
 
 	{%- for link in web_include_js %}
 	{#-<!-- DFP: Avoid load some scripts -->-#}
-	{%- if link not in ["website_script.js"] %}
+	{%- if link not in [] %}
 	{{ include_script(link) }}
 	{%- endif -%}
 	{%- endfor -%}
