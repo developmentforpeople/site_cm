@@ -1,3 +1,6 @@
+site_cm/docs/current
+site_cm/public/dist
+
 .DS_Store
 *.pyc
 *.egg-info

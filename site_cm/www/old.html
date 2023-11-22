@@ -1,0 +1,21 @@
+{% extends "templates/web.html" %}
+
+{% set title = heading or "¿Como mejorar?" %}
+
+{% block header %}<h1>{{ heading or "¡Hola!" }}</h1>{% endblock %}
+
+{% block page_content %}
+
+<p>{{ my_var }} 😉</p>
+
+<div class="search-box"></div>
+
+{% endblock %}
+
+{% block script %}
+<script>
+frappe.ready(function() {
+	frappe.setup_search('.search-box', '')
+})
+</script>
+{% endblock %}

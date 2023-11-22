@@ -1,0 +1,22 @@
+
+// @import "variables";
+
+
+@import "frappe/public/scss/website/index";
+
+
+// https://getbootstrap.com/docs/4.1/getting-started/introduction/
+
+
+.for-login,
+.for-forgot,
+.for-login-with-email-link,
+.for-signup,
+.for-email-login {
+	.page-card-head {
+		// Login logo 
+		img {
+			max-height: 100px !important;
+		}
+	}
+}

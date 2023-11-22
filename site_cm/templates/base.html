@@ -4,34 +4,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="frappe">
-
-	{% block meta_block %}
-		{% include "templates/includes/meta_block.html" %}
-	{% endblock %}
-
+{% block meta_block %}
+	{% include "templates/includes/meta_block.html" %}
+{% endblock %}
 	<title>{% block title %}{{ title | striptags }}{% endblock %}</title>
 
-	{% block favicon %}
-	<link
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="canonical" href="{{ canonical }}">
+
+{% block favicon %}
+	{#<!--<link
 		rel="shortcut icon"
 		href="{{ (favicon or "/assets/frappe/images/frappe-favicon.svg") | abs_url }}"
 		type="image/x-icon"
-	>
-	{% endblock %}
+	>-->-#}
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/site_cm/favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/site_cm/favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/site_cm/favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/site_cm/favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/site_cm/favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/site_cm/favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/site_cm/favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/site_cm/favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/site_cm/favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/site_cm/favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/site_cm/favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/site_cm/favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/site_cm/favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/assets/site_cm/favicon.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/site_cm/favicon.ico/ms-icon-144x144.png">
+{% endblock %}
 
-	{%- block head -%}
-		{% include "templates/includes/head.html" %}
-	{%- endblock -%}
+{%- block head %}
+	{% include "templates/includes/head.html" %}
+{%- endblock -%}
 
-	{%- block head_include %}
-		{{ head_include or "" }}
-	{% endblock -%}
+{%- block head_include -%}
+	{{ head_include or "" }}
+{% endblock %}
 
-	{%- block style %}
-		{% if colocated_css -%}
-			<style>{{ colocated_css }}</style>
-		{%- endif %}
-	{%- endblock -%}
+{%- block style -%}
+	{% if colocated_css -%}
+	<style>{{ colocated_css }}</style>
+	{%- endif -%}
+{%- endblock %}
 
 	<script>
 		window.frappe = {};
@@ -45,8 +63,8 @@
 	</script>
 </head>
 <body frappe-session-status="{{ 'logged-in' if frappe.session.user != 'Guest' else 'logged-out'}}" data-path="{{ path | e }}" {%- if template and template.endswith('.md') %} frappe-content-type="markdown" {%- endif %} class="{{ body_class or ''}}">
-	<!-- {# % include "public/icons/timeless/icons.svg" % #}
-	{# % include "public/icons/espresso/icons.svg" % #} -->
+	{#<!--  {% include "public/icons/timeless/icons.svg" %}
+	{% include "public/icons/espresso/icons.svg" %} -->#}
 	{%- block banner -%}
 		{% include "templates/includes/banner_extension.html" ignore missing %}
 
