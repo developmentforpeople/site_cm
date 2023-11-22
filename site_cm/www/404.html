@@ -1,0 +1,20 @@
+{% extends "templates/web.html" %}
+
+{%- block title -%}{{_("¡🫣 Uuuuups, no encontré la página!")}}{%- endblock -%}
+
+{% block page_content %}
+
+<script>
+window.is_404 = true
+</script>
+
+<div class="error-page">
+	<h2 class="mb-1 mt-4">
+		{{ _("¡🫣 Uuuuups, no encontré la página!") }}
+	</h2>
+	<div class="text-muted error-text">
+		{{ _("Me podría inventar alguna excusa..., pero me lo salto 😅.") }}
+	</div>
+</div>
+
+{% endblock %}
