@@ -179,17 +179,6 @@
   "based_on": null,
   "docstatus": 0,
   "doctype": "Language",
-  "enabled": 1,
-  "flag": null,
-  "language_code": "es",
-  "language_name": "Español",
-  "modified": "2023-11-18 14:55:36.909193",
-  "name": "es"
- },
- {
-  "based_on": null,
-  "docstatus": 0,
-  "doctype": "Language",
   "enabled": 0,
   "flag": null,
   "language_code": "es-AR",
@@ -889,5 +878,16 @@
   "language_name": "繁體中文",
   "modified": "2023-11-18 12:47:21.866857",
   "name": "zh-TW"
+ },
+ {
+  "based_on": null,
+  "docstatus": 0,
+  "doctype": "Language",
+  "enabled": 1,
+  "flag": null,
+  "language_code": "es",
+  "language_name": "Español",
+  "modified": "2023-11-18 14:55:36.909193",
+  "name": "es"
  }
 ]
