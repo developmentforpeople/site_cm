@@ -96,6 +96,8 @@ website_redirects = [
 	{ "source": "/request-to-delete-data", "target": "/" }, # Maybe to be enabled/customized
 	{ "source": "/request-data", "target": "/" }, # Maybe to be enabled/customized
 
+	{ "source": "/contact", "target": "/contacto" },
+
 	# # Knowledge Base / KB / Support / Ayuda / Base de conocimiento
 	# { "source": "/support", "target": "/preguntas-frecuentes" },
 	# { "source": "/help", "target": "/preguntas-frecuentes" },
