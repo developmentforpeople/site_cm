@@ -311,6 +311,7 @@ fixtures = [
 	"Web Page",
 	"Blog Post",
 	"Translation",
+	"Server Script",
 	# "List View Settings",
 	# "List Filter",
 	# "Global Defaults",
