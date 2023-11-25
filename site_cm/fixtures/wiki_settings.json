@@ -1,0 +1,30 @@
+[
+ {
+  "add_dark_mode": 1,
+  "add_search_bar": 1,
+  "collapse_sidebar_groups": 0,
+  "dark_mode_logo": null,
+  "default_wiki_space": "Wiki",
+  "docstatus": 0,
+  "doctype": "Wiki Settings",
+  "enable_table_of_contents": 1,
+  "javascript": null,
+  "logo": null,
+  "modified": "2023-11-25 10:20:12.044569",
+  "name": "Wiki Settings",
+  "navbar": [
+   {
+    "icon": null,
+    "label": "¿Necesitas ayuda?",
+    "open_in_new_tab": 0,
+    "parent": "Wiki Settings",
+    "parent_label": null,
+    "parentfield": "navbar",
+    "parenttype": "Wiki Settings",
+    "right": 1,
+    "url": "/contacto"
+   }
+  ],
+  "use_redisearch_for_search": 1
+ }
+]
