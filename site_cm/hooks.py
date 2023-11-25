@@ -124,10 +124,10 @@ website_route_rules = [
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-#	"methods": "site_cm.utils.jinja_methods",
-#	"filters": "site_cm.utils.jinja_filters"
-# }
+jinja = {
+	"methods": ["site_cm.utils.jinja_methods"],
+	"filters": ["site_cm.utils.jinja_filters"]
+}
 
 
 # Installation
