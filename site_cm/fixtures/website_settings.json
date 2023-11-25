@@ -2,7 +2,7 @@
  {
   "address": null,
   "app_logo": null,
-  "app_name": "Como Mejorar",
+  "app_name": "ComoMejorar - Pajas mentales de Jaime",
   "auto_account_deletion": 72,
   "banner_html": null,
   "banner_image": null,
@@ -16,9 +16,21 @@
   "enable_google_indexing": 0,
   "enable_view_tracking": 1,
   "favicon": null,
-  "footer_items": [],
+  "footer_items": [
+   {
+    "icon": null,
+    "label": "¿Alguna pregunta o comentario?",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "footer_items",
+    "parenttype": "Website Settings",
+    "right": 0,
+    "url": "contacto"
+   }
+  ],
   "footer_logo": null,
-  "footer_powered": null,
+  "footer_powered": "<a href=\"/jaime\">Creada</a> con cariño 🥰 usando <a href=\"https://frappe.io\" target=\"_blank\">Frappe</a> 🤩 ",
   "footer_template": null,
   "footer_template_values": null,
   "google_analytics_anonymize_ip": 1,
@@ -29,27 +41,53 @@
   "home_page": "index",
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2023-11-23 08:30:02.130004",
+  "modified": "2023-11-25 10:03:58.716711",
   "name": "Website Settings",
   "navbar_search": 1,
   "navbar_template": null,
   "navbar_template_values": null,
   "robots_txt": null,
-  "route_redirects": [
-   {
-    "parent": "Website Settings",
-    "parentfield": "route_redirects",
-    "parenttype": "Website Settings",
-    "source": "/index",
-    "target": "/"
-   }
-  ],
+  "route_redirects": [],
   "show_account_deletion_link": 0,
   "show_language_picker": 1,
   "splash_image": null,
   "subdomain": null,
   "title_prefix": null,
-  "top_bar_items": [],
+  "top_bar_items": [
+   {
+    "icon": null,
+    "label": "Frappe y ERPNext",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "frappe-y-erpnext"
+   },
+   {
+    "icon": null,
+    "label": "Conversaciones con GePeTo",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "conversaciones-con-gepeto"
+   },
+   {
+    "icon": null,
+    "label": "Sobre Jaime",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "jaime"
+   }
+  ],
   "website_theme": "Standard",
   "website_theme_image_link": null
  }

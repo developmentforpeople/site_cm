@@ -96,6 +96,7 @@ website_redirects = [
 	{ "source": "/request-to-delete-data", "target": "/" }, # Maybe to be enabled/customized
 	{ "source": "/request-data", "target": "/" }, # Maybe to be enabled/customized
 
+	{ "source": "/index", "target": "/" },
 	{ "source": "/contact", "target": "/contacto" },
 
 	# # Knowledge Base / KB / Support / Ayuda / Base de conocimiento
@@ -124,10 +125,10 @@ website_route_rules = [
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-#	"methods": "site_cm.utils.jinja_methods",
-#	"filters": "site_cm.utils.jinja_filters"
-# }
+jinja = {
+	"methods": ["site_cm.utils.jinja_methods"],
+	"filters": ["site_cm.utils.jinja_filters"]
+}
 
 
 # Installation
@@ -309,11 +310,23 @@ after_request = ["site_cm.utils.overrides.after_request"]
 fixtures = [
 	"System Settings",
 	"Language",
+	"Translation",
+	"Server Script",
+
 	"Website Settings",
 	"Web Page",
 	"Blog Post",
-	"Translation",
-	"Server Script",
+	"Blog Category",
+
+	"Wiki Settings",
+	"Wiki Page Patch",
+	"Wiki Page",
+	"Wiki Page Revision",
+	"Wiki Space",
+	"Wiki Group Item",
+	"Wiki Sidebar",
+	"Wiki Page Revision Item",
+
 	# "List View Settings",
 	# "List Filter",
 	# "Global Defaults",
