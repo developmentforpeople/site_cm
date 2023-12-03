@@ -35,3 +35,8 @@ def context_extend(context):
 	# context.dfp_path = path if path != "index" else ""
 	# context.dfp_url = frappe.utils.get_url(context.ae_path)
 
+
+@frappe.whitelist(allow_guest=True)
+def web_search(text:str, scope:str|None=None, start:int=0, limit:int=20):
+	frappe.log_error("site_cm:overrides.web_search", {"text": text, "scope": scope, "start": start, "limit": limit})
+	return []

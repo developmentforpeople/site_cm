@@ -1,0 +1,30 @@
+{% extends "templates/web.html" %}
+
+{% set title = heading or "¿Como mejorar?" %}
+
+{% block header %}<h1>Jelou! 👋</h1>{% endblock %}
+{#<!-- % block header %}<h1>{{ heading or "¡Hola!" }}</h1>{% endblock % -->#}
+
+{% block page_content %}
+
+{#<!-- <p>{{ my_var }} 😉</p> -->#}
+
+<p>¿Cómo va esa vida? Espero que bien 😉.</p>
+
+<p>Me reservo este espacio para compartir, de forma clara y resumida, conceptos importantes que pululan por mi cabeza (esto, como todo lo que digo, va con asteriscos!! importantes para mi, por supuesto!! 😅).</p>
+
+<h4>Busca en toda la web (en pruebas)</h4>
+
+<div id="search-box-body"></div>
+
+{% endblock %}
+
+{% block script %}
+<script>
+// search?q=pepe
+// frappe.search.web_search
+// frappe.ready(function() {
+// 	frappe.setup_search('#search-box-body', '')
+// })
+</script>
+{% endblock %}

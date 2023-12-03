@@ -26,12 +26,15 @@ update_website_context = [
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/site_cm/css/site_cm.css"
-# app_include_js = "/assets/site_cm/js/site_cm.js"
+# app_include_css = "site_cm.app.bundle.css"
+# app_include_js = "site_cm.app.bundle.js"
+
+# app_include_css = "dfp_external_storage.app.bundle.css"
+# app_include_js = "dfp_external_storage.app.bundle.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/site_cm/css/site_cm.css"
-# web_include_js = "/assets/site_cm/js/site_cm.js"
+web_include_css = ["site_cm.bundle.css"]
+web_include_js = ["site_cm.bundle.js"]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "site_cm/public/scss/website"
@@ -95,9 +98,10 @@ website_redirects = [
 	{ "source": "/index", "target": "/" },
 	{ "source": "/request-to-delete-data", "target": "/" }, # Maybe to be enabled/customized
 	{ "source": "/request-data", "target": "/" }, # Maybe to be enabled/customized
+	{ "source": "/search", "target": "/" }, # Disable Frappe deprecated search
 
-	{ "source": "/index", "target": "/" },
 	{ "source": "/contact", "target": "/contacto" },
+	{ "source": "/wiki", "target": "/" },
 
 	# # Knowledge Base / KB / Support / Ayuda / Base de conocimiento
 	# { "source": "/support", "target": "/preguntas-frecuentes" },
@@ -235,11 +239,12 @@ jinja = {
 
 # Overriding Methods
 # ------------------------------
-#
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "site_cm.event.get_events"
-# }
-#
+
+override_whitelisted_methods = {
+	"frappe.utils.global_search.web_search": "site_cm.utils.overrides.web_search",
+	# "frappe.desk.doctype.event.event.get_events": "site_cm.event.get_events",
+}
+
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
@@ -313,19 +318,19 @@ fixtures = [
 	"Translation",
 	"Server Script",
 
-	"Website Settings",
-	"Web Page",
-	"Blog Post",
-	"Blog Category",
+	# "Website Settings",
+	# "Web Page",
+	# "Blog Post",
+	# "Blog Category",
 
-	"Wiki Settings",
-	"Wiki Page Patch",
-	"Wiki Page",
-	"Wiki Page Revision",
-	"Wiki Space",
-	"Wiki Group Item",
-	"Wiki Sidebar",
-	"Wiki Page Revision Item",
+	# "Wiki Settings",
+	# "Wiki Page Patch",
+	# "Wiki Page",
+	# "Wiki Page Revision",
+	# "Wiki Space",
+	# "Wiki Group Item",
+	# "Wiki Sidebar",
+	# "Wiki Page Revision Item",
 
 	# "List View Settings",
 	# "List Filter",
