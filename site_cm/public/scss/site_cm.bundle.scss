@@ -21,8 +21,10 @@
 // 	}
 // }
 
-.search-icon {
-	position: absolute;
-	right: 5px;
-	top: 4px;
+#search-box-body {
+	.search-icon {
+		position: absolute;
+		right: 5px;
+		top: 4px;
+	}
 }
