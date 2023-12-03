@@ -2,7 +2,6 @@
 ---
 base_template: templates/web.html
 title: ComoMejorar
-# meta_description: 'Todo lo que hacemos en Ayuda Efectiva solo es posible gracias a donantes como tú: ¿quieres apoyar nuestra labor?'
 sitemap: 1
 ---
 
