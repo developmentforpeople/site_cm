@@ -1,5 +1,6 @@
 FROM frappe/erpnext:v15
 RUN echo "version: 2023.12.10 10:00"; bench get-app wiki --branch master https://github.com/developmentforpeople/wiki;
+RUN echo "version: 2023.12.10 10:30"; bench get-app dfp_tools --branch version-15 https://github.com/developmentforpeople/dfp_tools;
 RUN echo "version: 2023.12.10 10:00"; bench get-app dfp_external_storage --branch version-15 https://github.com/developmentforpeople/dfp_external_storage;
 RUN echo "version: 2023.12.10 10:00"; bench get-app site_cm --branch version-15 https://github.com/developmentforpeople/site_cm;
 CMD bench worker --queue long,default,short
