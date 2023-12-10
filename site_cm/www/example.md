@@ -5,8 +5,6 @@ title: ComoMejorar
 sitemap: 1
 ---
 
-# Jelou! 👋
+# Example title
 
-¿Cómo va esa vida? Espero que bien 😉.
-
-Me reservo este espacio para compartir, de forma clara y resumida, conceptos importantes que pululan por mi cabeza (esto, como todo lo que digo, va con asteriscos!! importantes para mi, por supuesto!! 😅).
+Example body

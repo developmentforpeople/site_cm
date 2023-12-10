@@ -96,8 +96,9 @@ website_redirects = [
 	{ "source": "/test", "target": "/" }, # Frappe test page
 	{ "source": "/all-products", "target": "/" }, # ERP page
 	{ "source": "/index", "target": "/" },
-	{ "source": "/request-to-delete-data", "target": "/" }, # Maybe to be enabled/customized
-	{ "source": "/request-data", "target": "/" }, # Maybe to be enabled/customized
+	# { "source": "/request-to-delete-data", "target": "/" }, # Maybe to be enabled/customized
+	# { "source": "/request-data", "target": "/" }, # Maybe to be enabled/customized
+	# { "source": "/request-for-account-deletion", "target": "/" }, # Maybe to be enabled/customized
 	{ "source": "/search", "target": "/" }, # Disable Frappe deprecated search
 
 	{ "source": "/contact", "target": "/contacto" },
