@@ -6,7 +6,7 @@
 
 <script>
 window.is_404 = true
-window.plausible('404', { props: { path: document.location.pathname } })
+window.plausible && window.plausible('404', { props: { path: document.location.pathname } })
 </script>
 
 <div class="error-page">
